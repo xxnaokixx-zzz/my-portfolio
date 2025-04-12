@@ -18,3 +18,49 @@ header {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: center;
+    height: 70px;
+}
+
+.logo{
+    font-size: 1.8rem;
+    font-weight: 700px;
+    color: var(--primary-color);
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li{
+    margin-left: 30px;
+}
+
+.nav-links a{
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.nav-links a:hover{
+    color: var(--primary-color);
+}
+
+.hamburger{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span{
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color);
+    margin: 3px o;
+    transition: var(--transition);
+}
