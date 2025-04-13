@@ -34,7 +34,7 @@
                     <span></span>
                     <span></span>
                 </div>
-    
+
             </nav>
         </header>
         <section id="home" class="hero">
@@ -49,67 +49,112 @@
         </section>
         <section id="about" class="about">
             <div class="container">
-              <h2 class="section-title">About Me</h2>
-              <div class="about-content">
-                <div class="about-text">
-                  <p>I'm a passionate web developer focused on creating clean, user-friendly experiences. With expertise in HTML, CSS, and JavaScript, I build responsive websites that look great on any device.</p>
-                  <p>When I'm not coding, you can find me exploring new design trends, taking photographs, or enjoying a good book.</p>
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>こんにちは！使いやすくて見た目もキレイなWebサイトを作るのが大好きなWebデベロッパーです。
+                            HTML、CSS、JavaScriptを使って、スマホでもパソコンでも快適に見られるサイトを作っています。</p>
+                        <p>コードを書いていないときは、新しいデザインをチェックしたり、写真を撮ったり、本を読んだりしてのんびり過ごしてます。</p>
+                    </div>
+                    <div class="skills">
+                        <div class="skill-item">
+                            <div class="skill-name">HTML</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">CSS</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Design</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="skills">
-                  <div class="skill-item">
-                    <div class="skill-name">HTML</div>
-                    <div class="skill-bar">
-                      <div class="skill-level" style="width: 90%"></div>
-                    </div>
-                  </div>
-                  <div class="skill-item">
-                    <div class="skill-name">CSS</div>
-                    <div class="skill-bar">
-                      <div class="skill-level" style="width: 85%"></div>
-                    </div>
-                  </div>
-                  <div class="skill-item">
-                    <div class="skill-name">JavaScript</div>
-                    <div class="skill-bar">
-                      <div class="skill-level" style="width: 75%"></div>
-                    </div>
-                  </div>
-                  <div class="skill-item">
-                    <div class="skill-name">Design</div>
-                    <div class="skill-bar">
-                      <div class="skill-level" style="width: 80%"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </section>
-          <section id="projects" class="projects">
+        </section>
+        <section id="projects" class="projects">
             <div class="container">
-              <h2 class="section-title">My Projects</h2>
-              <div class="project-grid">
-                <div class="project-card">
-                  <div class="project-image"></div>
-                  <h3>Project One</h3>
-                  <p>A responsive website with modern design principles.</p>
-                  <a href="#" class="project-link">View Project</a>
+                <h2 class="section-title">My Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-image"></div>
+                        <h3>Project One</h3>
+                        <p>モダンなデザインを取り入れたレスポンシブなウェブサイトです。</p>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image"></div>
+                        <h3>Project Two</h3>
+                        <p>シンプルで使いやすいUIのECサイトです。</p>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image"></div>
+                        <h3>Project Three</h3>
+                        <p>自分の作品を紹介するためのポートフォリオサイトです。</p>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
                 </div>
-                <div class="project-card">
-                  <div class="project-image"></div>
-                  <h3>Project Two</h3>
-                  <p>An e-commerce platform with clean user interface.</p>
-                  <a href="#" class="project-link">View Project</a>
-                </div>
-                <div class="project-card">
-                  <div class="project-image"></div>
-                  <h3>Project Three</h3>
-                  <p>A portfolio website showcasing creative work.</p>
-                  <a href="#" class="project-link">View Project</a>
-                </div>
-              </div>
             </div>
-          </section>
-          
+        </section>
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary">Send Message</button>
+                    </form>
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <h3>Email</h3>
+                            <p>leia_0423_nao@icloud.com</p>
+                        </div>
+                        <div class="info-item">
+                            <h3>Location</h3>
+                            <p>Tokyo, Japan</p>
+                        </div>
+                        <div class="info-item">
+                            <h3>Social</h3>
+                            <div class="social-links">
+                                <a href="#" class="social-link">Twitter</a>
+                                <a href="https://github.com/" class="social-link">GitHub</a>
+                                <a href="#" class="social-link">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2025 Your Name. All rights reserved.</p>
+            </div>
+        </footer>
     </body>
 
 </html>
