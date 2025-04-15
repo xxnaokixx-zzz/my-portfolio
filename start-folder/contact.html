@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+
+  <!-- Google Fonts（Inter） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- CSSのパス（相対パス注意！） -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="container">
+      <div class="logo">Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="work.html">My Works</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 📨 貼り付けるセクションここから ↓ -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-content">
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn primary">Send Message</button>
+          <div class="home-button-container">
+            <a href="../index.html" class="home-button">Back to Home</a>
+          </div>
+        </form>
+        <div class="contact-info">
+          <div class="info-item">
+            <h3>Email</h3>
+            <p>leia_0423_nao@icloud.com</p>
+          </div>
+          <div class="info-item">
+            <h3>Location</h3>
+            <p>Tokyo, Japan</p>
+          </div>
+          <div class="info-item">
+            <h3>Social</h3>
+            <div class="social-links">
+              <a href="#" class="social-link">Twitter</a>
+              <a href="https://github.com/" class="social-link">GitHub</a>
+              <a href="#" class="social-link">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ↑ セクションここまで -->
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
