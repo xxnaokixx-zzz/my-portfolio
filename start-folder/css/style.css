@@ -290,13 +290,21 @@ nav {
 
 .contact-content {
     display: flex;
-    justify-content: space-between;
-    gap: 50px;
+    justify-content: center;
 }
 
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* ← これで上に揃える */
+    flex-wrap: wrap;
+    gap: 50px;
+}
+  
 .contact-form,
 .contact-info {
   flex: 1;
+  min-width: 500px; 
 }
 
 
@@ -425,24 +433,3 @@ nav {
     font-size: 0.9rem;
     border-top: 1px solid var(--border-color);
 }
-  
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
