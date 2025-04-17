@@ -425,6 +425,57 @@ nav {
     box-shadow: 0 5px 15px rgba(108, 92, 231, 0.3);
 }
 
+#calcForm {
+    max-width: 500px;
+    margin: 0 auto 40px;
+    padding: 30px;
+    background-color: var(--light-background);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+  }
+  
+  #calcForm label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  
+  #calcForm input,
+  #calcForm select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: var(--transition);
+  }
+  
+  #calcForm input:focus,
+  #calcForm select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(108, 92, 231, 0.2);
+  }
+  
+  #formula,
+  #result {
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 5px;
+    border-left: 3px solid var(--primary-color);
+    font-family: monospace;
+    font-size: 0.9rem;  /* 文字サイズを小さく */
+    font-weight: 400;   /* 標準の太さに */
+    color: var(--light-text);  /* 少し薄い色に */
+  }
+  
+  #result {
+    font-weight: 500;  /* 結果は少し太く（でも元より細く） */
+    border-left-color: var(--secondary-color);
+  }  
 .footer {
     background-color: var(--light-background);
     padding: 40px 0;
