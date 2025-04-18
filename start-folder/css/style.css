@@ -111,7 +111,7 @@ header {
     z-index: 1000;
 }
 
-.container{
+.container {
     max-width: var(--container-width);
     margin: 0 auto;
     padding: 0 20px;
@@ -125,47 +125,47 @@ nav {
     height: 70px;
 }
 
-.logo{
+.logo {
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--primary-color);
 }
 
-.nav-links{
+.nav-links {
     display: flex;
     list-style: none;
 }
 
-.nav-links li{
+.nav-links li {
     margin-left: 30px;
 }
 
 .nav-links a {
     font-weight: 500;
-    color: var(--text-color); 
-    text-decoration: none;   
+    color: var(--text-color);
+    text-decoration: none;
     transition: var(--transition);
-  }
+}
 
 
-.nav-links a:hover{
+.nav-links a:hover {
     color: var(--primary-color);
 }
 
-.hamburger{
+.hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
 }
 
-.hamburger span{
+.hamburger span {
     width: 25px;
     height: 3px;
     background-color: var(--text-color);
     transition: var(--transition);
 }
 
-.hero{
+.hero {
     height: 100vh;
     display: flex;
     align-items: center;
@@ -173,16 +173,16 @@ nav {
     text-align: center;
 }
 
-.hero h1{
+.hero h1 {
     font-size: 3.5rem;
     margin-bottom: 20px;
 }
 
-.higthlight{
+.higthlight {
     color: var(--primary-color);
 }
 
-.subtitle{
+.subtitle {
     font-size: 1.5rem;
     color: var(--light-text);
     margin-bottom: 40px;
@@ -194,26 +194,26 @@ nav {
     align-items: center;
     gap: 50px;
 }
-  
 
-.about-text{
+
+.about-text {
     flex: 1;
 }
 
-.about-text p{
+.about-text p {
     margin-bottom: 20px;
     color: var(--light-text);
 }
 
-.skills{
+.skills {
     flex: 1;
 }
 
-.skill-item{
+.skill-item {
     margin-bottom: 20px;
 }
 
-.skill-name{
+.skill-name {
     margin-bottom: 8px;
     font-weight: 500;
 }
@@ -296,15 +296,16 @@ nav {
 .contact-section {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* ← これで上に揃える */
+    align-items: flex-start;
+    /* ← これで上に揃える */
     flex-wrap: wrap;
     gap: 50px;
 }
-  
+
 .contact-form,
 .contact-info {
-  flex: 1;
-  min-width: 500px; 
+    flex: 1;
+    min-width: 500px;
 }
 
 
@@ -320,19 +321,19 @@ nav {
 
 .form-group input,
 .form-group textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid var(--border-color);
-  border-radius: 5px;
-  font-family: inherit;
-  font-size: 1rem;
-  transition: var(--transition);
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: var(--transition);
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-  outline: none;
-  border-color: var(--primary-color);
+    outline: none;
+    border-color: var(--primary-color);
 }
 
 .contact-info {
@@ -370,7 +371,7 @@ nav {
     color: var(--primary-color);
 }
 
-.work-list{
+.work-list {
     text-align: center;
     max-width: 600px;
     margin: 0 auto;
@@ -432,16 +433,16 @@ nav {
     background-color: var(--light-background);
     border-radius: 10px;
     box-shadow: var(--shadow);
-  }
-  
-  #calcForm label {
+}
+
+#calcForm label {
     display: block;
     margin-bottom: 8px;
     font-weight: 500;
-  }
-  
-  #calcForm input,
-  #calcForm select {
+}
+
+#calcForm input,
+#calcForm select {
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
@@ -450,32 +451,272 @@ nav {
     font-family: inherit;
     font-size: 1rem;
     transition: var(--transition);
-  }
-  
-  #calcForm input:focus,
-  #calcForm select:focus {
+}
+
+#calcForm input:focus,
+#calcForm select:focus {
     outline: none;
     border-color: var(--primary-color);
     box-shadow: 0 0 0 2px rgba(108, 92, 231, 0.2);
-  }
-  
-  #formula,
-  #result {
+}
+
+#formula,
+#result {
     padding: 12px;
     margin-bottom: 15px;
     background-color: white;
     border-radius: 5px;
     border-left: 3px solid var(--primary-color);
     font-family: monospace;
-    font-size: 0.9rem;  /* 文字サイズを小さく */
-    font-weight: 400;   /* 標準の太さに */
-    color: var(--light-text);  /* 少し薄い色に */
-  }
-  
-  #result {
-    font-weight: 500;  /* 結果は少し太く（でも元より細く） */
+    font-size: 0.9rem;
+    /* 文字サイズを小さく */
+    font-weight: 400;
+    /* 標準の太さに */
+    color: var(--light-text);
+    /* 少し薄い色に */
+}
+
+#result {
+    font-weight: 500;
+    /* 結果は少し太く（でも元より細く） */
     border-left-color: var(--secondary-color);
-  }  
+}
+
+/* GitHub検索セクションのスタイル */
+#github {
+    padding: 120px 0 80px;
+    min-height: calc(100vh - 70px);
+    background-color: var(--light-background);
+}
+
+#github .section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    color: var(--text-color);
+}
+
+#github .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+/* GitHub検索コンテナ */
+.github-search-container {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+/* 検索フォームスタイル */
+.search-form {
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#username {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+#username:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+#githubbtn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0 25px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+    border-radius: 0 8px 8px 0;
+}
+
+#githubbtn:hover {
+    background-color: #5649c0;
+}
+
+/* 結果表示エリアのスタイル */
+#result {
+    background-color: var(--light-background);
+    border-radius: 8px;
+    padding: 20px;
+    min-height: 50px;
+    transition: var(--transition);
+}
+
+#result:empty {
+    padding: 0;
+    min-height: 0;
+}
+
+/* GitHub プロフィールカードのスタイル */
+.github-profile {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.github-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
+}
+
+.github-info {
+    flex: 1;
+}
+
+.github-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.github-username {
+    color: var(--light-text);
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.github-bio {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+.github-stats {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.github-stat {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.github-stat-count {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.github-links {
+    display: flex;
+    gap: 10px;
+}
+
+.github-link {
+    padding: 5px 10px;
+    background-color: var(--light-background);
+    border-radius: 5px;
+    font-size: 0.85rem;
+    transition: var(--transition);
+}
+
+.github-link:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* エラーメッセージのスタイル */
+.error-message {
+    color: #e74c3c;
+    padding: 10px;
+    background-color: rgba(231, 76, 60, 0.1);
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* ローディングインジケーターのスタイル */
+.loading {
+    text-align: center;
+    padding: 20px;
+}
+
+.loading::after {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 3px solid rgba(108, 92, 231, 0.3);
+    border-radius: 50%;
+    border-top-color: var(--primary-color);
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    .github-search-container {
+        padding: 20px;
+    }
+
+    .search-form {
+        flex-direction: column;
+        box-shadow: none;
+    }
+
+    #username {
+        border-radius: 8px;
+        border-right: 1px solid var(--border-color);
+        margin-bottom: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #githubbtn {
+        border-radius: 8px;
+        padding: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .github-profile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .github-stats {
+        justify-content: center;
+    }
+
+    .github-links {
+        justify-content: center;
+    }
+}
+
 .footer {
     background-color: var(--light-background);
     padding: 40px 0;

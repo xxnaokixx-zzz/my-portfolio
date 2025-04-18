@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Works</title>
+
+    <!-- フォントの事前接続（パフォーマンス向上） -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts「Inter」の読み込み（ウェイトも指定済み） -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- 外部CSSの読み込み -->
+    <!-- work_1_3/1_3.html から見て、2階層上の css フォルダ -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="JavaScriptWork/work_1_3/1_3.js"></script>
+
+  </head>
+
+  <header>
+    <nav class="container">
+      <div class="logo">Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="work.html">My Works</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+  <section id="github" name="github">
+    <div class="container">
+      <h2 class="section-title">Search GitHub</h2>
+      <!-- 検索フォームを追加 -->
+      <div class="github-search-container">
+        <div class="search-form">
+          <input type="text" id="username" placeholder="GitHubのユーザー名を入力">
+          <button id="githubbtn">検索</button>
+        </div>
+        <div id="result"></div>
+      </div>
+    </div>
+    <div class="back-to-buttons">
+      <div class="cta-buttons">
+        <a href="../index.html" class="btn primary">Back to Home</a>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="js/github.js"></script>
+
+</html>
